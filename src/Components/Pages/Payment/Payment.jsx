@@ -35,7 +35,7 @@ function Payment() {
     try {
       // Create Stripe Payment Intent (in cents)
       const stripeResponse = await axios.post(
-        `http://localhost:4001/payment/create?total=${Math.round(totalAmount * 100)}`
+        `https://abaymart-api-deploy.onrender.com/payment/create?total=${Math.round(totalAmount * 100)}`
       );
       const clientSecret = stripeResponse.data.clientSecret;
 
@@ -57,7 +57,7 @@ function Payment() {
       }
 
       // Store order in MySQL backend
-      await axios.post("http://localhost:4001/orders", {
+      await axios.post("https://abaymart-api-deploy.onrender.com/orders", {
         user_id: user.uid,  
         total: totalAmount,
         status: "Succeeded",

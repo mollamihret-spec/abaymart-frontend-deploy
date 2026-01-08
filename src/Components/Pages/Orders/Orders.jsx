@@ -18,7 +18,7 @@ function Orders() {
     if (!user) return;
 
     axios
-.get(`http://localhost:4001/orders/user/${user.uid}`)
+.get(`https://abaymart-api-deploy.onrender.com/orders/user/${user.uid}`)
       .then(res => {
         setOrders(res.data);
         setLoading(false);

@@ -9,7 +9,7 @@ function Product() {
 
     useEffect(() => {
     
-    axios.get('http://localhost:4001/products')
+    axios.get('https://abaymart-api-deploy.onrender.com/products')
     .then((res)=>{
      setProducts(res.data)
      setisLoading(false)

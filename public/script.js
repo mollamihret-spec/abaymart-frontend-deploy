@@ -58,7 +58,7 @@ loginForm.addEventListener("submit", async (e) => {
 
 async function fetchProducts() {
   try {
-    const res = await fetch("http://localhost:4001/products", {
+    const res = await fetch("https://abaymart-api-deploy.onrender.com/", {
       headers: { Authorization: `Bearer ${idToken}` } // include token
     });
     const products = await res.json();
@@ -115,7 +115,7 @@ async function fetchProducts() {
 
 async function deleteProduct(id) {
   try {
-    await fetch(`http://localhost:4001/products/${id}`, {
+    await fetch(`https://abaymart-api-deploy.onrender.com//products/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${idToken}` }
     });
@@ -153,7 +153,7 @@ productForm.addEventListener("submit", async (e) => {
   if (data.count) data.count = parseInt(data.count);
 
   const updateId = productForm.dataset.updateId;
-  const url = updateId ? `http://localhost:4001/products/${updateId}` : "http://localhost:4001/add-products";
+  const url = updateId ? `https://abaymart-api-deploy.onrender.com//products/${updateId}` : "https://abaymart-api-deploy.onrender.com//add-products";
   const method = updateId ? "PUT" : "POST";
 
   try {
