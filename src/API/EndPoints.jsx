@@ -1,1 +1,1 @@
-export const productUrl = "https://abaymart-api-deploy.onrender.com/";
+export const productUrl = "https://abaymart-api-deploy.onrender.com";
