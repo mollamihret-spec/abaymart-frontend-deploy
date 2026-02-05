@@ -119,7 +119,7 @@ function Auth() {
             type="submit"
             name="signUp"
             className={classes.login_registerBtn}
-          > { loading.signUp ? <PulseLoader color='#2563EB' size={15}></PulseLoader> : "Create your Amazon Account" }
+          > { loading.signUp ? <PulseLoader color='#2563EB' size={15}></PulseLoader> : "Create your Abaymart Account" }
             
           </button>
           <p>This is Abaymart website registration and signUp page.You must create an account if you don not have one.Then you can sign in anytime.You are signing in to the Abaymart e-commerce website.</p>
