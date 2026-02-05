@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom';
 import { DataProvider } from './Components/DataProvider/DataProvider.jsx';
-import { Reducer, initialState } from './Utility/rEDUCER.JSX';
+import { Reducer, initialState } from './Utility/Reducer.JSX';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
