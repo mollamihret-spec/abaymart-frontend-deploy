@@ -115,7 +115,7 @@ async function fetchProducts() {
 
 async function deleteProduct(id) {
   try {
-    await fetch(`https://abaymart-api-deploy.onrender.com//products/${id}`, {
+    await fetch(`https://abaymart-api-deploy.onrender.com/products/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${idToken}` }
     });
